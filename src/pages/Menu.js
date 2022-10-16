@@ -3,7 +3,6 @@ import MenuCard from "../components/MenuCard";
 import kopiImg from "../assets/kopi_o.jpg";
 import rotiKosongImg from "../assets/roti_kosong.jpg";
 import tehTarikImg from "../assets/teh_tarik.jpg";
-import { useState } from "react";
 
 const items = [
   { id: "B001", name: "Kopi", price: 2.5, img: kopiImg },

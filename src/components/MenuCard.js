@@ -7,7 +7,7 @@ function MenuCard({ item, action }) {
       <Card.Img variant="top" src={item.img} />
       <Card.Body>
         <Card.Title>{item.name}</Card.Title>
-        <Card.Text>RM {item.price}</Card.Text>
+        <Card.Text>RM {item.price.toFixed(2)}</Card.Text>
         <Button variant="primary" onClick={() => action(item)}>
           Add to Cart
         </Button>
