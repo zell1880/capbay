@@ -26,7 +26,10 @@ function App() {
     <div>
       <NavBar
         onClickCart={handleShow}
-        cartQuantity={cart.reduce((acc, item) => acc + item.quantity, 0)}
+        cartQuantity={Object.values(cart).reduce(
+          (acc, item) => acc + item.quantity,
+          0
+        )}
       />
       <Menu addtoCart={addtoCart} />
       <CartModal
